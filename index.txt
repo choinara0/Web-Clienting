@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<hteml>
+<head>
+	<title>오늘뭐먹지?</title>
+<style>
+	ul{
+		list-style-type: none;
+    padding-left:600px;
+	  padding-top:10px;
+	}
+
+   li{
+      display:inline;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-weight:600;
+      font-size:35px;
+      font-style:italic;
+	  	max-width:100%;
+   }
+   li a{
+      display:inline-block;
+      text-align:center;
+      padding: 60px 30px;
+      text-decoration:none;
+      color:#696969;
+   }
+   li a:hover{
+		  opacity: 0.6;
+   }
+	 img+.desc {display:none;}
+	 img:hover+.desc {display:block;}
+
+	 .fixed{
+		 position:fixed;
+		 top: 100px;
+		 left: 0px;
+	 }
+	 .absolute{
+		 position: absolute;
+		 top:-50px;
+		 left: 100px;
+	 }
+	 .float{
+		 float : right;
+	 }
+</style>
+</head>
+	<audio autoplay loop>
+		<source src="bgm.mp3" type="audio/mpeg">
+	</audio>
+
+	<img class = "fixed" src = "menu_table.jpg" alt= "메뉴표" usemap="#tablemap" >
+	<map name = "tablemap">
+		<area shape = "rect" coords = "8, 18, 193, 196" alt = "중식" href = "china.html">
+		<area shape = "rect" coords = "198, 198, 259, 261" alt = "중식" href = "china.html">
+		<area shape = "rect" coords = "6,, 397, 190, 583" alt = "한식" href = "korea.html">
+		<area shape = "rect" coords = "189, 328, 261, 389" alt = "한식" href = "korea.html">
+		<area shape = "rect" coords = "395, 397, 582, 582" alt = "분식" href = "flour.html">
+		<area shape = "rect" coords = "325, 330, 390, 387" alt = "분식" href = "flour.html">
+	<ul>
+			 <li><a class = "absolute" href="#home">국민대생들의 고민 오늘 뭐 먹지?</a></li>
+			 <li><a href="korea.html" ><img src = "korea.jpg" alt = "한식"><span class = "desc">한식</span></a></li>
+			 <li><a href="china.html" ><img src = "china.jpg" alt = "중식"><span class = "desc">중식</span></a></li>
+			 <li><a href="flour.html" ><img src = "flour.jpg" alt = "분식 및 간식"><span class = "desc">분식 및 간식</span></a></li>
+	</ul>
+	<form class = "float">
+		<p>국민대 근처 맛집 리뷰하기</p>
+		이름 : <input type="text" value="최나라"><br>
+		비밀번호: <input type="password" value = "password"><br>
+		음식사진 : <input type = "file" name = "upload" value="파일"><br>
+		<select>
+			<option>한식</option>
+			<option>중식</option>style = "width : 150px; font-size: 12pt" onfocus="this.style.width = 300px" onBlur="this.style.width = "150px""style = "width : 150px; font-size: 12pt" onfocus="this.style.width = 300px" onBlur="this.style.width = "150px""
+			<option>분식 및 간식</option>
+		</select><br>
+		<input type = "text" value = "리뷰내용" style = "width: 300; height: 100;"><br><br>
+		<button type = "submit">SUbmit</button>
+		<button type = "reset">Reset</button>
+	</form>
+</body>
+</html>
